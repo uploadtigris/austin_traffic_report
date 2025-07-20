@@ -34,11 +34,6 @@
 
 ### 5. See the incidents Geospatially with a Heatmap
 
-To see mine:
-- finding "austin_incidents_heatmap.html" in the project files at the top of this page, click it.
-- go to the top right corner to find the three dots (...) -> click download.
-- open the .html document in a browser via your Downloads folder.
-
 Still screenshot Example
 
 ![](imgs/austin_incidents_heatmap.png)
