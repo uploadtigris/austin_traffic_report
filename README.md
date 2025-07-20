@@ -59,6 +59,9 @@ git clone https://github.com/uploadtigris/austin_traffic_report.git
 cd austin_traffic_report
 bash run_analysis.sh python3 -m pip install jupyter && bash run_analysis.sh
 ```
+```bash
+bash run_analysis.sh
+```
 
 **Windows:**
 ```bash
