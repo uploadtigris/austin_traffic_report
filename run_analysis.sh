@@ -13,7 +13,7 @@ pip install -r requirements.txt || {
 }
 
 # 2. Verify notebook exists
-NOTEBOOK="Austin_Traffic_Analysis.ipynb"
+NOTEBOOK="traffic_report.ipynb"
 if [ ! -f "$NOTEBOOK" ]; then
     echo "❌ Error: Notebook $NOTEBOOK not found"
     exit 1
