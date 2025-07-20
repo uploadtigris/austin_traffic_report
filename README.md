@@ -25,6 +25,8 @@
 
 ### 4. See the incidents by Time of Day
 
+#TODO: add in off hour tick marks and labels
+
 ![](example_images/austin_incidents_by_hour.png)
 
 **Analysis:**
