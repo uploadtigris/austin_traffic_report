@@ -1,5 +1,5 @@
 # austin_traffic_report
-A traffic report of the last 1000 reported traffic incidents from the City of Austin's Open Data Portal
+**A traffic report of the last 1000 reported traffic incidents from the City of Austin's Open Data Portal**
 
 ## Functions
 
@@ -25,16 +25,40 @@ A traffic report of the last 1000 reported traffic incidents from the City of Au
 
 ![](imgs/austin_incidents_by_hour.png)
 
-**From Sunset until 2am, this is a dangerous time to be on the road!**\
-**Then, incidents reported fall from 2am until 7am.**\
-**There is lull in traffic incidents reported from 7am to 11am.**\
-**We then see the interesting steady incline from 2pm until 9pm. Presumably when people are getting off of work, getting kids from school, driving home from happy hour, or doing chores.**
+**Analysis:**
+
+- **From Sunset until 2am, this is a dangerous time to be on the road!**
+- **Then, incidents reported fall from 2am until 7am.**
+- **There is lull in traffic incidents reported from 7am to 11am.**
+- **We then see the interesting steady incline from 2pm until 9pm. Presumably when people are getting off of work, getting kids from school, driving home from happy hour, or doing chores.**
 
 ### 5. See the incidents Geospatially with a Heatmap
 
-[Download Heatmap html & run it in a browser](austin_incidents_heatmap.html)
+To see mine:
+- finding "austin_incidents_heatmap.html" in the project files at the top of this page, click it.
+- go to the top right corner to find the three dots (...) -> click download.
+- open the .html document in a browser via your Downloads folder.
 
 Still screenshot Example
 
 ![](imgs/austin_incidents_heatmap.png)
+
+### 6. Run this report yourself
+
+## Run This Report
+
+**Mac/Linux:**
+```bash
+git clone https://github.com/uploadtigris/austin_traffic_report.git && cd austin_traffic_report
+python3 -m pip install jupyter && bash run_analysis.sh
+```
+
+**Windows:**
+```bash
+git clone https://github.com/uploadtigris/austin_traffic_report.git
+cd austin_traffic_report && py -m pip install jupyter
+bash run_analysis.sh
+```
+
+
 
