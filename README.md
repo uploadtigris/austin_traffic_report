@@ -11,6 +11,8 @@
 
 ### 2. See number and times of last 1k incidents reported
 
+#TODO: fix x-axis to reflect reasonables bins and ticks
+
 ![](example_images/austin_incidents_by_update_times.png)
 
 **On this view, we can see the fluctation of incidents in our last 1,000 reported incidents. This may imply that there is not a very consistent pattern in traffic accidents in the day to day.**
@@ -34,7 +36,7 @@
 
 ### 5. See the incidents Geospatially with a Heatmap
 
-Still screenshot Example
+Still screenshot Example (.html file viewable in browser after running the below code)
 
 ![](example_images/austin_incidents_heatmap.png)
 
