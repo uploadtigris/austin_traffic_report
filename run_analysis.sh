@@ -1,37 +1,37 @@
 #!/bin/bash
 
-# Robust analysis script for Austin Traffic Report
+# Austin Traffic Report - Run Analysis Script
 set -e  # Exit immediately if any command fails
 
-echo "🚀 Starting analysis..."
+echo "🚀 Setting up analysis environment..."
 
-# 1. Install dependencies
+# 1. Install Python dependencies
+echo "📦 Installing Python packages..."
 pip install -r requirements.txt || {
-    echo "❌ Failed to install dependencies";
-    exit 1;
+    echo "❌ Error: Failed to install dependencies"
+    exit 1
 }
 
-# 2. Execute notebook
-jupyter nbconvert --execute --to notebook --inplace analysis.ipynb || {
-    echo "❌ Notebook execution failed";
-    exit 1;
+# 2. Verify notebook exists
+NOTEBOOK="Austin_Traffic_Analysis.ipynb"
+if [ ! -f "$NOTEBOOK" ]; then
+    echo "❌ Error: Notebook $NOTEBOOK not found"
+    exit 1
+fi
+
+# 3. Execute and convert notebook
+echo "📊 Running analysis..."
+jupyter nbconvert --execute --to html --output-dir=. --output=report "$NOTEBOOK" || {
+    echo "❌ Error: Notebook execution failed"
+    exit 1
 }
 
-# 3. Convert to HTML with explicit output handling
-OUTPUT_HTML="report.html"
-jupyter nbconvert --to html --output-dir=. --output="$OUTPUT_HTML" analysis.ipynb || {
-    echo "❌ HTML conversion failed";
-    exit 1;
-}
-
-# 4. Cleanup and verify
-[ -f "$OUTPUT_HTML" ] || {
-    echo "❌ Output HTML not found";
-    exit 1;
-}
-
-echo "✅ Success! Report generated: $OUTPUT_HTML"
-echo "🖥️  Open in browser:"
-echo "    open $OUTPUT_HTML  # MacOS"
-echo "    xdg-open $OUTPUT_HTML  # Linux"
-echo "    start $OUTPUT_HTML  # Windows CMD"
+# 4. Verify output
+if [ -f "report.html" ]; then
+    echo -e "\n✅ Success! Report generated:"
+    echo "   - report.html (open in browser)"
+    echo "   - Data files in output/"
+else
+    echo "❌ Error: Report generation failed"
+    exit 1
+fi
