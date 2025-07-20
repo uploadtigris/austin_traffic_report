@@ -42,10 +42,22 @@ Still screenshot Example
 
 ## Run This Report
 
+Folder file system will come out as 
+
+```
+~/Downloads/austin_traffic_analysis/
+  ├── traffic_report.ipynb
+  ├── requirements.txt
+  └── output/
+      └── traffic_report.html
+```
+
 **Mac/Linux:**
 ```bash
-git clone https://github.com/uploadtigris/austin_traffic_report.git && cd austin_traffic_report
-python3 -m pip install jupyter && bash run_analysis.sh
+cd ~/Downloads
+git clone https://github.com/uploadtigris/austin_traffic_report.git
+cd austin_traffic_report
+bash run_analysis.sh python3 -m pip install jupyter && bash run_analysis.sh
 ```
 
 **Windows:**
