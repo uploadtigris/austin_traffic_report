@@ -38,37 +38,19 @@ Still screenshot Example
 
 ![](example_images/austin_incidents_heatmap.png)
 
-### 6. Run this report yourself
+### 6. Run this report yourself (All Platforms)
 
-## Run This Report
-
-Folder file system will come out as 
-
-```
-~/Downloads/austin_traffic_analysis/
-  ├── traffic_report.ipynb
-  ├── requirements.txt
-  └── output/
-      └── traffic_report.html
-```
-
-**Mac/Linux:**
 ```bash
-cd ~/Downloads
 git clone https://github.com/uploadtigris/austin_traffic_report.git
 cd austin_traffic_report
-bash run_analysis.sh python3 -m pip install jupyter && bash run_analysis.sh
-```
-```bash
+pip install -r requirements.txt
 bash run_analysis.sh
 ```
 
-**Windows:**
-```bash
-git clone https://github.com/uploadtigris/austin_traffic_report.git
-cd austin_traffic_report && py -m pip install jupyter
-bash run_analysis.sh
-```
+### Windows Notes:
+- Requires Git Bash (included with [Git for Windows](https://gitforwindows.org/))
+- Uses the same `bash` command as Linux/Mac
+- `pip` will automatically use the correct Python version
 
 
 
