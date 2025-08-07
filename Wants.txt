@@ -1,6 +1,6 @@
 I want...
 
-- to set up my Lennox environment to run a bash script that will run the traffic report file and tell me whether the API call was successful .
+- to set up my linux environment to run a bash script that will run the traffic report file and tell me whether the API call was successful .
 - to add a slider on the heat map graphic, so that users can slide through different days
 - working a free tier cloud integration of the project with hosting and a previous API call database management 
 - add a get ignore or some other form of file that is not visible to anybody but me 
